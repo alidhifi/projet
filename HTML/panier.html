@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Panier - jawaher</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://unpkg.com/htmlincludejs"></script> -->
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Voici notre en‑tête principale utilisée dans toutes les pages
+         de notre site web -->
+    <header>
+        <!-- <ul class="navigation">
+        <li><a href="#"><h1>Music History</h1></a></li>
+        <li><a href="#">View Music</li>
+        <li>| <a href="#">Add Music</a></li>
+        <li>| <a href="#">Profile</a></li>
+      </ul> -->
+        <!-- <nav>
+        <ul>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3 is longer</a></li>
+            <li class="push-right"><a href="#">Page 4</a></li>
+        </ul>
+    </nav> -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="../imgs/logo-jawaher.png" alt="logo jawaher">
+            </a>
+        </div>
+        <form>
+            <input type="search" name="q" placeholder="Rechercher">
+            <input type="submit" value="Rechercher">
+        </form>
+        <nav>
+            <ul>
+                <li><a href="index.html#MONTRES">MONTRES</a></li>
+                <li class="deroulant"><a href="#">Bijoux &ensp;</a>
+                    <ul class="sous">
+                        <li><a href="#">Bijoux en ligne</a></li>
+                        <li><a href="#"> Bijoux sur commande </a></li>
+                        <li><a href="index.html#BRACELET">BRACELET</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant"><a href="#">SERVICES &ensp;</a>
+                    <ul class="sous">
+                        <li><a href="#">Expertises</a></li>
+                        <li><a href="#">FABRICATION DES BIJOUX</a></li>
+                        <li><a href="#">ENTRETIEN DE VOS BIJOUX</a></li>
+                        <li><a href="#">Achat et Vente d'or</a></li>
+                        <li><a href="#">Sertissage</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Panier <span id="panier">0</span></a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Ici nous mettons le contenu de la page -->
+    <main class="content">
+
+        <!-- Il contient un article -->
+        <section class="container content-section">
+            <h2 class="section-header">Panier</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ARTICLE</span>
+                <span class="cart-price cart-header cart-column">PRIX</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITÉ</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">0 DTN</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">ACHETER</button>
+        </section>
+
+
+    </main>
+
+    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+
+
+    <footer class="footer">
+        <ul>
+            <li>
+                <h3>Info. sur la commande</h3>
+                <ul>
+                    <li>
+                        <a href="#"> J'achète</a>
+                    </li>
+                    <li>
+                        <a href="#"> Information sur le paiement</a>
+                    </li>
+                    <li>
+                        <a href="#">Service de commande</a>
+                    </li>
+                    <li>
+                        <a href="#">Conditions de livraison</a>
+                    </li>
+                    <li>
+                        <a href="#"> Réclamations</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h3>Aide</h3>
+                <ul>
+                    <li>
+                        <a href="#"> Remboursement</a>
+                    </li>
+                    <li>
+                        <a href="#">Echanges</a>
+                    </li>
+                    <li>
+                        <a href="#">Garantie et reparation</a>
+                    </li>
+                    <li>
+                        <a href="#"> Etanchéité</a>
+                    </li>
+                    <li>
+                        <a href="#"> Blog</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Liens utiles</h3>
+                <ul>
+                    <li>
+                        <a href="#"> Montre femme</a>
+                    </li>
+                    <li>
+                        <a href="#">Montre homme</a>
+                    </li>
+                    <li>
+                        <a href="#">Montre enfant</a>
+                    </li>
+                    <li>
+                        <a href="#">Montre festina femme</a>
+                    </li>
+                    <li>
+                        <a href="#">Montre festina homme</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <div id="CONTACT">
+            <ul>
+                <li>
+                    <h3> S'inscrire à la <span> Newsletter </span></h3>
+                    <form>
+                        <p><span></span>
+                            <input placeholder="Votre Email" name="email_newsletter" type="text" value=""
+                                autocomplete="off">
+                            <input value="OK" type="submit">
+                        </p>
+                    </form>
+                </li>
+                <li>
+                    <h3>Offres spéciales </h3>
+                    <h6> Découvrez nos offres à petit prix <a href="#"> Voir </a></h6>
+
+                </li>
+                <li>
+                    <h3>Nous joindre </h3>
+
+                    <span> <a href="#" target="_blank"> <img src="../imgs/facebook.png" width="32" height="32"
+                                alt="Facebook"> </a> </span>
+                    <span><a href="#" target="_blank"><img src="../imgs/instagram.png" width="32" height="32"
+                                alt="instagram"></a></span>
+                    <span><a href="#" target="_blank"><img src="../imgs/youtube.png" width="32" height="32"
+                                alt="Youtube"></a></span>
+                    <span><a href="#" target="_blank"><img src="../imgs/twitter.png" width="32" height="32"
+                                alt="Twiter"></a></span>
+                    <span><a href="#" target="_blank"><img src="../imgs/android.png" width="32" height="32"
+                                alt="Google-store"></a></span>
+                </li>
+
+            </ul>
+
+        </div>
+        <hr>
+        <p>©Copyright 2020 par Ali Dhifi. Tous droits reversés.</p>
+    </footer>
+</body>
+
+</html>
